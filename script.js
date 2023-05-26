@@ -5,7 +5,7 @@ let equals=document.querySelector(".equalbtn")
 let negative=document.querySelector(".neg")
 let acbtn=document.querySelector(".ac")
 let percent=document.querySelector(".percent")
-
+let del=document.querySelector(".del")
 
 let firstnum=""
 let isfirstvalue=false;
@@ -184,5 +184,16 @@ acbtn.addEventListener("click",()=>{
 })
 
 
+del.addEventListener("click",()=>{
+    
+    // resultvalue=JSON.stringify(resultvalue);
+    // resultvalue.slice(0,-1);
+    // result.innerHTML=resultvalue;
+
+   let rand= result.innerHTML.toString().slice(0,-1);
+    result.innerHTML=rand;
+
+
+})
 
 
